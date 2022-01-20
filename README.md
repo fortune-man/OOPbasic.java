@@ -4,13 +4,14 @@
 클래스: 객체 지향을 지원하는 프로그래밍 언어에서 객체 구현을 위해 지원하는 기능
 인스턴스: 클래스가 복제된 데이터.
 여러 상태의 클래스가 동시에 필요할 때 클래스 앞에 new를 붙여서 클래스의 복제본을 만들면 서로 다른 상태를 유지할 수 있다. 이것을 가르켜 클래스를 인스턴스화 한다고 한다.
-
+```
 public class User{}
 
 User user1 = new User();
 User user2 = new User();
 System.out.println(user1 == user2);
 -> false
+```
 
 ### 속성과 메서드
 #### 속성
@@ -22,7 +23,7 @@ System.out.println(user1 == user2);
 
 #### 인스턴스 변수
 인스턴스 별로 독립적으로 가질 수 있는 값
-
+```
 public class User {
     String id;
     String password;
@@ -52,6 +53,8 @@ public class Member {
         System.out.println("member2 = " + member2.login("AAA", "qwer"));
     }
 }
+```
+
 ### 메서드
 메서드는 클래스가 가지고 있는 함수이자 객체가 할 수 있는 행위를 뜻한다.
 크게 공개형(public)메서드와 비공개형(private) 메서드로 나눠볼 수 있다.
